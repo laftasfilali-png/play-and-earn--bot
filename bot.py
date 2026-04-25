@@ -1,6 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import random
+from telegram import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
 TOKEN = "8649811520:AAFJY2fSlk2oJ-9c1jZwNjK6fz37wRtP3f4"
 
