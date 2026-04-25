@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spin Game</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #111;
+      color: white;
+    }
+
+    .wheel {
+      width: 200px;
+      height: 200px;
+      border: 10px solid gold;
+      border-radius: 50%;
+      margin: 50px auto;
+      line-height: 200px;
+      font-size: 20px;
+      background: #222;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      background: gold;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>🎡 Spin Game</h2>
+
+<div class="wheel" id="wheel">SPIN</div>
+
+<button onclick="spin()">🎲 SPIN</button>
+
+<h3 id="result"></h3>
+
+<script>
+function spin() {
+    const rewards = [
+        "10 Coins",
+        "20 Coins",
+        "50 Coins",
+        "100 Coins",
+        "Try Again"
+    ];
+
+    let result = rewards[Math.floor(Math.random() * rewards.length)];
+
+    document.getElementById("wheel").innerText = "🎡 SPINNING...";
+    
+    setTimeout(() => {
+        document.getElementById("wheel").innerText = "DONE";
+        document.getElementById("result").innerText = "🎁 " + result;
+    }, 1500);
+}
+</script>
+
+</body>
+</html>
