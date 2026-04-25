@@ -15,7 +15,7 @@ async def spin(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 app = ApplicationBuilder().token(TOKEN).build()
 
-app.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("Web App", start))
 app.add_handler(CommandHandler("spin", spin))
 
 app.run_polling()
