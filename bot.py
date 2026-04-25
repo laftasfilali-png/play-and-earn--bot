@@ -5,7 +5,7 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
 TOKEN = "8649811520:AAFJY2fSlk2oJ-9c1jZwNjK6fz37wRtP3f4"
 
-async def web_app (update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🎮 مرحبا بك في Play & Earn Bot!\nاضغط /spin للعب 🎡")
 
 async def spin(update: Update, context: ContextTypes.DEFAULT_TYPE):
