@@ -1,0 +1,2 @@
+TOKEN = "8649811520:AAFJY2fSlk2oJ-9c1jZwNjK6fz37wRtP3f4"
+VIP_PRICE = 10  # USDT (فقط للعرض الآن)
